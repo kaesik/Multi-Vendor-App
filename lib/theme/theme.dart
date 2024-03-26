@@ -13,7 +13,7 @@ ThemeData lightTheme = ThemeData(
     onSecondary: Colors.grey.shade900,
     outline: Colors.grey.shade900,
   ),
-  textTheme: GoogleFonts.josefinSansTextTheme().copyWith().apply(
+  textTheme: GoogleFonts.comfortaaTextTheme().copyWith().apply(
         bodyColor: Colors.grey.shade900,
         displayColor: Colors.grey.shade900,
       ),
@@ -31,7 +31,7 @@ ThemeData darkTheme = ThemeData(
     onSecondary: Colors.grey.shade200,
     outline: Colors.grey.shade200,
   ),
-  textTheme: GoogleFonts.josefinSansTextTheme().copyWith().apply(
+  textTheme: GoogleFonts.comfortaaTextTheme().copyWith().apply(
         bodyColor: Colors.grey.shade200,
         displayColor: Colors.grey.shade200,
       ),
