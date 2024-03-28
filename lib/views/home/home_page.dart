@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:multi_vendor_app/views/home/widgets/category_list.dart';
 import 'package:multi_vendor_app/widgets/custom_appbar.dart';
+import 'package:multi_vendor_app/widgets/heading.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -8,7 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size.fromHeight(128),
         child: CustomAppBar(),
       ),
@@ -22,8 +23,19 @@ class HomePage extends StatelessWidget {
               color:
                   Theme.of(context).colorScheme.onBackground.withOpacity(0.1),
             ),
-            CategoryList(),
-            Text('Home Page'),
+            const CategoryList(),
+            Heading(
+              text: 'Nearby Restaurants',
+              onPressed: () {},
+            ),
+            Heading(
+              text: 'Nearby Restaurants',
+              onPressed: () {},
+            ),
+            Heading(
+              text: 'Nearby Restaurants',
+              onPressed: () {},
+            ),
           ],
         ),
       ),
