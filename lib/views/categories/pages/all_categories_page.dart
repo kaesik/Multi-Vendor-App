@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:multi_vendor_app/constants/uidata.dart';
 import 'package:multi_vendor_app/views/categories/widgets/category_tile.dart';
 
-class AllCategories extends StatelessWidget {
-  const AllCategories({super.key});
+class AllCategoriesPage extends StatelessWidget {
+  const AllCategoriesPage({super.key});
 
   @override
   Widget build(BuildContext context) {
