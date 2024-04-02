@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:multi_vendor_app/controllers/tab_index_controller.dart';
-import 'package:multi_vendor_app/views/cart/cart_page.dart';
-import 'package:multi_vendor_app/views/home/home_page.dart';
-import 'package:multi_vendor_app/views/profile/profile_page.dart';
-import 'package:multi_vendor_app/views/search/search_page.dart';
+import 'package:multi_vendor_app/views/cart/pages/cart_page.dart';
+import 'package:multi_vendor_app/views/home/pages/home_page.dart';
+import 'package:multi_vendor_app/views/profile/pages/profile_page.dart';
+import 'package:multi_vendor_app/views/search/pages/search_page.dart';
 
 class MainScreen extends StatelessWidget {
   MainScreen({super.key});

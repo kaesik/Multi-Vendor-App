@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:multi_vendor_app/controllers/category_controller.dart';
-import 'package:multi_vendor_app/views/categories/all_categories.dart';
+import 'package:multi_vendor_app/views/categories/pages/all_categories_page.dart';
 
 class CategoryWidget extends StatelessWidget {
   CategoryWidget({
@@ -20,7 +20,7 @@ class CategoryWidget extends StatelessWidget {
           controller.setCategory = '';
           controller.setTitle = '';
         } else if (category['value'] == 'more') {
-          Get.to(() => const AllCategories(),
+          Get.to(() => const AllCategoriesPage(),
               transition: Transition.fadeIn,
               duration: const Duration(milliseconds: 500));
         } else {

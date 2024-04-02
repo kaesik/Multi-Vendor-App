@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:multi_vendor_app/views/categories/category_page.dart';
+import 'package:multi_vendor_app/views/categories/pages/category_page.dart';
 
 class CategoryTile extends StatelessWidget {
   CategoryTile({
