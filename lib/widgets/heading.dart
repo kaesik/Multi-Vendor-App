@@ -26,7 +26,7 @@ class Heading extends StatelessWidget {
           IconButton(
             onPressed: onPressed,
             icon: Icon(
-              Icons.more_horiz,
+              Icons.grid_view_rounded,
               color: Theme.of(context).colorScheme.primary,
             ),
           )
