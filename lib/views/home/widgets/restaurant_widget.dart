@@ -26,7 +26,7 @@ class RestaurantWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(right: 16),
         child: Container(
-          width: 256,
+          width: 320,
           height: 192,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
@@ -40,7 +40,7 @@ class RestaurantWidget extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: SizedBox(
-                      width: 256,
+                      width: 320,
                       height: 128,
                       child: Image.network(
                         image,
@@ -105,6 +105,7 @@ class RestaurantWidget extends StatelessWidget {
                       ],
                     ),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         RatingBarIndicator(
                           rating: 5,
