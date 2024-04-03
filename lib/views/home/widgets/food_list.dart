@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:multi_vendor_app/constants/uidata.dart';
+import 'package:multi_vendor_app/views/home/widgets/food_widget.dart';
 
 class FoodList extends StatelessWidget {
   const FoodList({super.key});
@@ -16,13 +17,13 @@ class FoodList extends StatelessWidget {
           (index) {
             var food = foods[index];
             return Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 256,
-                width: 256,
-                color: Colors.grey,
-              ),
-            );
+                padding: const EdgeInsets.all(8.0),
+                child: FoodWidget(
+                  image: food['imageUrl'],
+                  title: food['title'],
+                  time: food['time'],
+                  price: food['price'].toString(),
+                ));
           },
         ),
       ),
