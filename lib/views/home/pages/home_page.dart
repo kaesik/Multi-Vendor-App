@@ -30,33 +30,43 @@ class HomePage extends StatelessWidget {
                   Theme.of(context).colorScheme.onBackground.withOpacity(0.1),
             ),
             const CategoryList(),
-            Heading(
-              text: 'Nearby Restaurants',
-              onPressed: () {
-                Get.to(() => const NearbyRestaurantsPage(),
-                    transition: Transition.fadeIn,
-                    duration: const Duration(milliseconds: 500));
-              },
+            SizedBox(
+              height: Get.height - 282,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Heading(
+                      text: 'Nearby Restaurants',
+                      onPressed: () {
+                        Get.to(() => const NearbyRestaurantsPage(),
+                            transition: Transition.fadeIn,
+                            duration: const Duration(milliseconds: 500));
+                      },
+                    ),
+                    const NearbyRestaurants(),
+                    Heading(
+                      text: 'Food closer to you',
+                      onPressed: () {
+                        Get.to(() => const FastestFoodPage(),
+                            transition: Transition.fadeIn,
+                            duration: const Duration(milliseconds: 500));
+                      },
+                    ),
+                    const FoodList(),
+                    Heading(
+                      text: 'Recommendations',
+                      onPressed: () {
+                        Get.to(() => const RecommendationsPage(),
+                            transition: Transition.fadeIn,
+                            duration: const Duration(milliseconds: 500));
+                      },
+                    ),
+                    const FoodList(),
+                    const SizedBox(height: 32)
+                  ],
+                ),
+              ),
             ),
-            const NearbyRestaurants(),
-            Heading(
-              text: 'Recommendations',
-              onPressed: () {
-                Get.to(() => const RecommendationsPage(),
-                    transition: Transition.fadeIn,
-                    duration: const Duration(milliseconds: 500));
-              },
-            ),
-            const FoodList(),
-            Heading(
-              text: 'Food closer to you',
-              onPressed: () {
-                Get.to(() => const FastestFoodPage(),
-                    transition: Transition.fadeIn,
-                    duration: const Duration(milliseconds: 500));
-              },
-            ),
-            const FoodList(),
           ],
         ),
       ),
