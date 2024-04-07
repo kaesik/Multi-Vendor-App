@@ -146,6 +146,7 @@ List<dynamic> restaurants = [
         "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "rating": 5,
     "ratingCount": "3278",
+    "isAvailable": false,
     "coords": {
       "id": "2021",
       "latitude": 37.78557922976825,
