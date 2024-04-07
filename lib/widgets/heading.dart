@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Heading extends StatelessWidget {
-  Heading({
+  const Heading({
     super.key,
     required this.text,
     this.onPressed,
@@ -13,7 +13,7 @@ class Heading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 12),
+      padding: const EdgeInsets.only(top: 12),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

@@ -8,7 +8,7 @@ class FoodList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 192,
+      height: 204,
       padding: const EdgeInsets.only(left: 12, top: 8),
       child: ListView(
         scrollDirection: Axis.horizontal,

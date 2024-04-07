@@ -24,16 +24,18 @@ class FoodWidget extends StatelessWidget {
         padding: const EdgeInsets.only(right: 16),
         child: Container(
           width: 320,
-          height: 192,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
-            color: Theme.of(context).colorScheme.background,
+            color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
           ),
           child: ListView(
             physics: const NeverScrollableScrollPhysics(),
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(16),
+                  topRight: Radius.circular(16),
+                ),
                 child: SizedBox(
                   width: 320,
                   height: 128,
