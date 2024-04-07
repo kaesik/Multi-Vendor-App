@@ -17,13 +17,16 @@ class NearbyRestaurantsPage extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-        child: ListView(
-          children: List.generate(
-            restaurants.length,
-            (index) {
-              var restaurant = restaurants[index];
-              return RestaurantTile(restaurant: restaurant);
-            },
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListView(
+            children: List.generate(
+              restaurants.length,
+              (index) {
+                var restaurant = restaurants[index];
+                return RestaurantTile(restaurant: restaurant);
+              },
+            ),
           ),
         ),
       ),
