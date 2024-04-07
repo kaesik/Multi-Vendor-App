@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:multi_vendor_app/constants/uidata.dart';
+import 'package:multi_vendor_app/views/home/widgets/food_tile.dart';
 
 class FastestFoodPage extends StatelessWidget {
   const FastestFoodPage({super.key});
@@ -14,8 +16,19 @@ class FastestFoodPage extends StatelessWidget {
           style: Theme.of(context).textTheme.titleLarge,
         ),
       ),
-      body: const Center(
-        child: Text('Fastest Food'),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListView(
+            children: List.generate(
+              foods.length,
+              (index) {
+                var food = foods[index];
+                return FoodTile(food: food);
+              },
+            ),
+          ),
+        ),
       ),
     );
   }
