@@ -351,7 +351,7 @@ const profile = {
   "email": "db@king.com",
   "uid": "4NmOkCbvu7ToaBS9ZR1UVpv0G1g2",
   "address": [],
-  "userType": "Vendor",
+  "role": "vendor",
   "profile":
       "https://d326fntlu7tb1e.cloudfront.net/uploads/bdec9d7d-0544-4fc4-823d-3b898f6dbbbf-vinci_03.jpeg",
   "updatedAt": "2023-10-24T11:02:28.215Z"
